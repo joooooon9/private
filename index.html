@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lg.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+            .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더영역 -->
+        <div class="header">
+            <!-- 헤더상단 -->
+            <div class="header-top">
+                <div class="header-logo"><a href="#"></a></div>
+                <div class="header-menu">
+                    <ul class="header-icons">
+                        <li><a href="#" class="search"></a></li>
+                        <li><a href="#" class="mypage"></a></li>
+                        <li><a href="#" class="cart"></a></li>
+                    </ul>
+                    <div class="company"><div class="line"></div><span>회사소개</span><div class="line"></div>
+                        <div class="company-drop">
+                            <div class="company-drop-item"><a href="#">기업정보</a></div>
+                            <div class="company-drop-item"><a href="#">인재채용</a></div>
+                            <div class="company-drop-item"><a href="#">투자자정보</a></div>
+                            <div class="company-drop-item"><a href="#">준법경영</a></div>
+                            <div class="company-drop-item"><a href="#">ESG경영</a></div>
+                            <div class="company-drop-item"><a href="#">뉴스<img src="./img/btn-outlink-16.svg" alt=""></a></div>
+                            <div class="company-drop-item"><a href="#">열린구매<img src="./img/btn-outlink-16.svg" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="header-links">
+                        <div class="b2b"><span>B2B</span><a href=""></a></div>
+                        <div class="bestshop"><span>LG베스트샵</span><a href=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더하단 -->
+            <div class="header-bottom">
+                <div class="header-nav">
+                    <ul>
+                        <li class="nav-menu" data-title="0">제품
+                            <!-- 숨길내용 .dropdown -->
+                            <div class="dropdown">
+                                <div class="sub-menu">
+                                    <div data-target="1">TV/AV</div>
+                                    <div data-target="2">IT</div>
+                                    <div data-target="3">주방가전</div>
+                                    <div data-target="4">생활가전</div>
+                                    <div data-target="5">에어컨/에어케어</div>
+                                    <div data-target="6">뷰티/의료기기</div>
+                                    <div data-target="7">에너지</div>
+                                    <div data-target="8">LG SIGNATURE</div>
+                                    <div data-target="9">LG ObjextCollextion</div>
+                                    <div data-target="10">케어용품/소모품</div>
+                                </div>
+                                <div class="sub-menu-items" id="1">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">TV<span></span></a></div>
+                                            <div class="p-content"><a href="">올레드 TV</a></div>
+                                            <div class="p-content"><a href="">QNED MiniLED TV</a></div>
+                                            <div class="p-content"><a href="">나노셀 TV</a></div>
+                                            <div class="p-content"><a href="">울트라 HD TV</a></div>
+                                            <div class="p-content"><a href="">일반 LED TV</a></div>
+                                            <div class="p-content"><a href="">라이프스타일 스크린</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">프로젝터<span></span></a></div>
+                                            <div class="p-content"><a href="">시네빔</a></div>
+                                            <div class="p-content"><a href="">프로빔(상업용)</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">AV<span></span></a></div>
+                                            <div class="p-content"><a href="">사운드 바</a></div>
+                                            <div class="p-content"><a href="">무선 스피커</a></div>
+                                            <div class="p-content"><a href="">울트라 게이밍 스피커</a></div>
+                                            <div class="p-content"><a href="">블루투스 이어폰(톤 프리)</a></div>
+                                            <div class="p-content"><a href="">오디오/플레이어</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">상업용 디스플레이<span></span></a></div>
+                                            <div class="p-content"><a href="">올레드 사이니지</a></div>
+                                            <div class="p-content"><a href="">디지털 사이니지</a></div>
+                                            <div class="p-content"><a href="">LED 사이니지</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">케어용품/소품<span></span></a></div>
+                                            <div class="p-content"><a href="">TV</a></div>
+                                            <div class="p-content"><a href="">프로젝터</a></div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#갤러리디자인</a></div>
+                                            <div><a href="">#홈 엔터테인먼트</a></div>
+                                            <div><a href="">#캠핑영화관</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20211216_gnb_banner (1).jpg" width="100%"
+                                                    alt=""><span>LG 올레드 evo 오브제컬렉션</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="2">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">노트북<span></span></a></div>
+                                            <div class="p-content"><a href="">그램</a></div>
+                                            <div class="p-content"><a href="">울트라 기어</a></div>
+                                            <div class="p-content"><a href="">울트라 pc</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">일체형/데스크톱<span></span><br>로봇</a></div>
+                                            <div class="p-content"><a href="">시네빔</a></div>
+                                            <div class="p-content"><a href="">프로빔(상업용)</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">모니터<span></span></a></div>
+                                            <div class="p-content"><a href="">울트라기어 게이밍모니터</a></div>
+                                            <div class="p-content"><a href="">울트와일드 모니터</a></div>
+                                            <div class="p-content"><a href="">울트HD 모니터</a></div>
+                                            <div class="p-content"><a href="">PC모니터</a></div>
+                                            <div class="p-content"><a href="">TV모니터</a></div>
+                                            <div class="p-content"><a href="">IPTV모니터</a></div>
+                                            <div class="p-content"><a href="">클라우드모니터</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">케어용품/소품<span></span></a></div>
+                                            <div class="p-content"><a href="">노트북</a></div>
+                                            <div class="p-content"><a href="">모니터</a></div>
+                                            <div class="p-content"><a href="">데스크톱</a></div>
+                                            <div class="p-content"><a href="">프린터</a></div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#게임</a></div>
+                                            <div><a href="">#재택</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/211224_GNB_IT_Gram.jpg" width="100%"
+                                                    alt=""><span>LG 그램</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="3">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">냉장고<span></span></a></div>
+                                            <div class="p-content"><a href="">정수기형</a></div>
+                                            <div class="p-content"><a href="">상냉장/하냉장</a></div>
+                                            <div class="p-content"><a href="">양문형</a></div>
+                                            <div class="p-content"><a href="">일반형</a></div>
+                                            <div class="p-content"><a href="">비즈니스</a></div>
+                                            <div class="p-content"><a href="">와인셀러</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">컨버터블 패키지<span></span></a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">김치냉장고<span></span></a></div>
+                                            <div class="p-content"><a href="">스탠드형</a></div>
+                                            <div class="p-content"><a href="">뚜껑식형</a></div>
+                                            <div class="p-content"><a href="">프리스타일</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">전기레인지<span></span></a></div>
+                                            <div class="p-content"><a href="">인덕션</a></div>
+                                            <div class="p-content"><a href="">하이브리드</a></div>
+                                            <div class="p-content"><a href="">하이라이트</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">식기세척기<span></span></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">광파오븐/전자레인지<span></span></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">정수기<span></span></div>
+                                            <div class="p-content">냉온정수기</div>
+                                            <div class="p-content">냉정수기</div>
+                                            <div class="p-content">정수전용</div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">맥주 제조기<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">빌트인가전<span></span></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">시그니처 키친 스위트<span></span></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">케어용품/소모품<span></span></div>
+                                            <div class="p-content">냉장고/김치냉장고</div>
+                                            <div class="p-content">정수기</div>
+                                            <div class="p-content">광파오븐/전자레인지</div>
+                                            <div class="p-content">전기레인지</div>
+                                            <div class="p-content">식기세척기</div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#결혼</a></div>
+                                            <div><a href="">#홈쿡</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20210625_refrigerators.jpg" width="100%"
+                                                    alt=""><span>LG 디오스 얼음정수기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="4">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">워시타워<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">세탁기<span></span></a></div>
+                                            <div class="p-content"><a href="">트윈워시</a></div>
+                                            <div class="p-content"><a href="">트롬</a></div>
+                                            <div class="p-content"><a href="">통돌이</a></div>
+                                            <div class="p-content"><a href="">미니세탁기</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">의류건조기<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">스타일러<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">청소기<span></span></div>
+                                            <div class="p-content">코드제로 A95</div>
+                                            <div class="p-content">코드제로 R9</div>
+                                            <div class="p-content">코드제로 M9</div>
+                                            <div class="p-content">핸드스틱</div>
+                                            <div class="p-content">로보킹</div>
+                                            <div class="p-content">싸이킹</div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">식물생활가전<span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">안마의자<span></span></a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">케어용품/소모품<span></span></div>
+                                            <div class="p-content">세탁기</div>
+                                            <div class="p-content">의류건조기</div>
+                                            <div class="p-content">스타일러</div>
+                                            <div class="p-content">청소기</div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#칼 주름</a></div>
+                                            <div><a href="">#드레스룸</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20220104_household-appliances.jpg" width="100%"
+                                                    alt=""><span>LG 트롬 워시타워 오브제컬렉션</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="5">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">에어컨<span></span></a></div>
+                                            <div class="p-content"><a href="">스탠드형</a></div>
+                                            <div class="p-content"><a href="">2in1</a></div>
+                                            <div class="p-content"><a href="">3in1</a></div>
+                                            <div class="p-content"><a href="">벽걸이형</a></div>
+                                            <div class="p-content"><a href="">이동식 에어컨</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">시스템 에어컨<span></span></a></div>
+                                            <div class="p-content"><a href="">주거용에어컨</a></div>
+                                            <div class="p-content"><a href="">상업용스탠드</a></div>
+                                            <div class="p-content"><a href="">상업용 천장형</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">공기청정기<span></span></a></div>
+                                            <div class="p-content">공기청정기</div>
+                                            <div class="p-content">휴대용 공기청정기</div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">공기청정팬<span></span></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">제습/가습기<span></span></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">실링펜<span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">케어용품/소모품<span></span></a></div>
+                                            <div class="p-content">에어컨</div>
+                                            <div class="p-content">공기청정기/에어케어</div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#미세먼지</a></div>
+                                            <div><a href="">#반려동물</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20210416_airCondition.jpg" width="100%"
+                                                    alt=""><span>LG 휘센 타워에어컨</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="6">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">뷰티 디바이스<span></span></a></div>
+                                            <div class="p-content"><a href="">아이케어</a></div>
+                                            <div class="p-content"><a href="">탄력기기</a></div>
+                                            <div class="p-content"><a href="">흡수촉진기</a></div>
+                                            <div class="p-content"><a href="">클렌징 기기</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">의료기기<span></span></a></div>
+                                            <div class="p-content">메디헤어</div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">케어용품/소모품<span></span></div>
+                                            <div class="p-content">프라엘</div>
+                                            <div class="p-content">아이케어</div>
+                                            <div class="p-content">메디케어</div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="hash-tag">
+                                            <div><a href="">#피부미용</a></div>
+                                            <div><a href="">#웰빙</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20211025_beauty_2.png" width="100%"
+                                                    alt=""><span>LG 프라엘 인텐시브 멀티케어</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="7">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">태양광<span></span></a></div>
+                                            <div class="p-content"><a href="">발전/주거용</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">솔루션<span></span></a></div>
+                                            <div class="p-content">빌딩솔루션(BMS)<span></span></div>
+                                            <div class="p-content">에너지솔루션<span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="8">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">올레드 TV<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">냉장고<span></span></a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">세탁기<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">에어컨<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20210303_TVAV.jpg" width="100%" alt=""><span>LG
+                                                    SIGNATURE-LG SIGNATURE OLED R</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="9">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">TV<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">냉장고<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">컨버터블 패키지<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">김치냉장고<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">식기세척기<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">광파오븐<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">정수기<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">워시타워<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">세탁기<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">의류건조기<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">스타일러<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">청소기<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">식물생활가전<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">에어컨<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">공기청정기<span></span></a></div>
+                                        </div>
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">공기청정팬<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20210420_gnb_objetcollection.png"
+                                                    width="100%" alt=""><span>LG Objet Collection-LG 오브제컬렉션</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-items" id="10">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">LG SIGNATURE<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">LG Object<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">청소기<span></span></a></div>
+                                            <div class="p-content"><a href="">A9 청소기</a></div>
+                                            <div class="p-content"><a href="">로봇청소기(M9,R9등)</a></div>
+                                            <div class="p-content"><a href="">기타청소기</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">에어컨<span></span></a></div>
+                                            <div class="p-content"><a href="">스탠드에어컨</a></div>
+                                            <div class="p-content"><a href="">벽걸이에어컨</a></div>
+                                            <div class="p-content"><a href="">창문형/이동식 에어컨</a></div>
+                                            <div class="p-content"><a href="">시스템/천정형 에어컨</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">공기청정기/에어케어<span></span></a></div>
+                                            <div class="p-content"><a href="">360º 공기청정기</a></div>
+                                            <div class="p-content"><a href="">휴대용 공기청정기</a></div>
+                                            <div class="p-content"><a href="">몽블랑/기타 공기청정기</a></div>
+                                            <div class="p-content"><a href="">제습기/가습기/에어워셔</a></div>
+                                            <div class="p-content"><a href="">퓨리케어 마스크</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">세탁기<span></span></a></div>
+                                            <div class="p-content"><a href="">드럼 세탁기</a></div>
+                                            <div class="p-content"><a href="">통돌이 세탁기</a></div>
+                                            <div class="p-content"><a href="">미니워셔 세탁기</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">TV/AV<span></span></a></div>
+                                            <div class="p-content"><a href="">TV</a></div>
+                                            <div class="p-content"><a href="">프로젝터(미니빔 등)</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">모니터/PC<span></span></a></div>
+                                            <div class="p-content"><a href="">노트북/그램</a></div>
+                                            <div class="p-content"><a href="">데스크탑</a></div>
+                                            <div class="p-content"><a href="">탭북</a></div>
+                                            <div class="p-content"><a href="">모니터</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">프린터<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">뷰티/의료기기<span></span></a></div>
+                                            <div class="p-content"><a href="">프라엘</a></div>
+                                            <div class="p-content"><a href="">메디헤어</a></div>
+                                            <div class="p-content"><a href="">아이케어</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">스마트폰/G Pad<span></span></a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">건조기<span></span></a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">스타일러<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">냉장고<span></span></a></div>
+                                            <div class="p-content"><a href="">김치냉장고</a></div>
+                                            <div class="p-content"><a href="">양문형 냉장고</a></div>
+                                            <div class="p-content"><a href="">일반형 냉장고</a></div>
+                                            <div class="p-content"><a href="">업소용/비즈니스</a></div>
+                                            <div class="p-content"><a href="">냉동고</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">이온기/정수기<span></span></a></div>
+                                            <div class="p-content"><a href="">이온수기</a></div>
+                                            <div class="p-content"><a href="">정수기</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">조리기기<span></span></a></div>
+                                            <div class="p-content"><a href="">광파오븐레인지</a></div>
+                                            <div class="p-content"><a href="">가스오븐레인지</a></div>
+                                            <div class="p-content"><a href="">전자레인지</a></div>
+                                            <div class="p-content"><a href="">가스레인지</a></div>
+                                            <div class="p-content"><a href="">전기레인지</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">식기세척기<span></span></a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">안마의자<span></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/cj_2_notice.png" width="100%"
+                                                    alt=""><span>택배사(CJ대한통운) 배송지연 안내</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-menu" data-title="1" id="spot">스토리
+                            <div class="dropdown">
+                                <div class="nav-title">스토리</div>
+                                <div class="item-flexbox">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">라이프<span></span></a></div>
+                                            <div class="p-content"><a href="">라이프스타일</a></div>
+                                            <div class="p-content"><a href="">트렌드</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title"><a href="">인사이드<span></span></a></div>
+                                            <div class="p-content"><a href="">대명장의 추천</a></div>
+                                            <div class="p-content"><a href="">Only & Best</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">가이드&팁<span></span></a></div>
+                                            <div class="p-content"><a href="">가전꿀팁</a></div>
+                                            <div class="p-content"><a href="">사용가이드</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title"><a href="">리뷰<span></span></a></div>
+                                            <div class="p-content"><a href="">스탠바이미 클럽</a></div>
+                                            <div class="p-content"><a href="">고객리뷰</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title"><a href="">아카이브<span></span></a></div>
+                                            <div class="p-content"><a href="">TV광고</a></div>
+                                            <div class="p-content"><a href="">수상내역</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist"></div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20211216_gnb_banner (1).jpg" width="100%"
+                                                    alt=""><span>LG 올레드 evo 오브제컬렉션</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-menu" data-title="2">고객지원
+                            <div class="dropdown">
+                                <div class="nav-title">고객지원</div>
+                                <div class="item-flexbox">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">제품사용지원<span></span></div>
+                                            <div class="p-content"><a href="">제품 문제 해결</a></div>
+                                            <div class="p-content"><a href="">동영상 가이드</a></div>
+                                            <div class="p-content"><a href="">사용 설명서</a></div>
+                                            <div class="p-content"><a href="">드라이버 S/W</a></div>
+                                            <div class="p-content"><a href="">S/W 업데이트 소식</a></div>
+                                            <div class="p-content"><a href="">카드뉴스</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">서비스 상담<span></span></div>
+                                            <div class="p-content"><a href="">챗봇 상담</a></div>
+                                            <div class="p-content"><a href="">이메일 문의</a></div>
+                                            <div class="p-content"><a href="">전화상담 문의</a></div>
+                                            <div class="p-content"><a href="">영상상담 예약</a></div>
+                                            <div class="p-content"><a href="">원격상담 예약</a></div>
+                                            <div class="p-content"><a href="">상담결과 조회/변경</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">서비스 예약<span></span></div>
+                                            <div class="p-content"><a href="">출장 서비스 예약</a></div>
+                                            <div class="p-content"><a href="">제품 설치/철거 예약</a></div>
+                                            <div class="p-content"><a href="">예약결과 조회/변경</a></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">센터/매장 찾기<span></span></div>
+                                            <div class="p-content"><a href="">센터찾기</a></div>
+                                            <div class="p-content"><a href="">센터 방문 예약</a></div>
+                                            <div class="p-content"><a href="">베스트샵 매장찾기</a></div>
+                                            <div class="p-content"><a href="">매장 상담 예약</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">고객의 소리<span></span></div>
+                                            <div class="p-content"><a href="">칭찬합니다</a></div>
+                                            <div class="p-content"><a href="">계산해주세요</a></div>
+                                            <div class="p-content"><a href="">나의 글보기</a></div>
+                                            <div class="p-content"><a href="">칭찬 글보기</a></div>
+                                            <div class="p-content"><a href="">경영진에게 제안</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">서비스 안내<span></span></div>
+                                            <div class="p-content"><a href="">서비스 뉴스</a></div>
+                                            <div class="p-content"><a href="">공지사항</a></div>
+                                            <div class="p-content"><a href="">요금/보증 안내</a></div>
+                                            <div class="p-content"><a href="">재생부품 가격 공지</a></div>
+                                            <div class="p-content"><a href="">이용가이드/FAQ</a></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">제품 카탈로그<span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-menu" data-title="3">렌탈/케어
+                            <div class="dropdown">
+                                <div class="nav-title">렌탈/케어</div>
+                                <div class="item-flexbox">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">렌탈(케어솔루션) 제품<span></span></div>
+                                            <div class="p-content"><a href="">정수기</a></div>
+                                            <div class="p-content"><a href="">얼음정수기냉장고</a></div>
+                                            <div class="p-content"><a href="">맥주제조기</a></div>
+                                            <div class="p-content"><a href="">공기청정기</a></div>
+                                            <div class="p-content"><a href="">건조기</a></div>
+                                            <div class="p-content"><a href="">스타일러</a></div>
+                                            <div class="p-content"><a href="">전기레인지</a></div>
+                                            <div class="p-content"><a href="">식기세척기</a></div>
+                                            <div class="p-content"><a href="">식물생활가전</a></div>
+                                            <div class="p-content"><a href="">안마의자</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">렌탈/케어소개<span></span></div>
+                                            <div class="p-content"><a href="">WHY 케어솔루션</a></div>
+                                            <div class="p-content"><a href="">WHY 케어샵</a></div>
+                                            <div class="p-content"><a href="">고객혜택</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">케어플래너로 견적내기<span></span></div>
+                                        </div>
+                                        <div class="hash-tag">
+                                            <div><a href="">#미세먼지 솔루션</a></div>
+                                            <div><a href="">#펫 케어솔루션</a></div>
+                                            <div><a href="">#어버이날 솔루션</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-img">
+                                            <a href=""><img src="./img/20211231_water-purifiers_event.jpg" width="100%"
+                                                    alt=""><span>상하좌우 정수기 렌탈료 최대 11% 할인</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-menu" data-title="4">이벤트/멤버쉽
+                            <div class="dropdown">
+                                <div class="nav-title">이벤트/멤버쉽</div>
+                                <div class="item-flexbox">
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">멤버십<span></span></div>
+                                        </div>
+                                        <div class="item-middle">
+                                            <div class="p-title">이벤트<span></span></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">기획전<span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist">
+                                        <div class="item-top">
+                                            <div class="p-title">엘라쇼<span></span></div>
+                                        </div>
+                                        <div class="item-bottom">
+                                            <div class="p-title">카드혜택<span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="itemlist"></div>
+                                    <div class="itemlist"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-menu" data-title="5">마이컬렉션
+                            <div class="dropdown">
+                                <div class="nav-title">마이컬렉션</div>
+                                <div class="img-flexbox">
+                                    <div class="imglist">
+                                        <div class="item-img"><a href=""><span>가장 많이 본 제품</span><img src="./img/01-my-collection-gnb-most-viewed.png" alt=""></a></div>
+                                    </div>
+                                    <div class="imglist">
+                                        <div class="item-img"><a href=""><span>가장 많이 판매된 제품</span><img src="./img/02-my-collection-gnb-best-selling.png" alt=""></a></div>
+                                    </div>
+                                    <div class="imglist">
+                                        <div class="item-img"><a href=""><span>나만의 제품 제품</span><img src="./img/03-my-collection-gnb-product-curation1.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-nav-right">
+                    <div class="right-rink1"><a href="#"></a></div>
+                    <div class="right-rink2"><a href="#"></a></div>
+                    <div class="right-rink3"><a href="#"></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 메인영역 -->
+        <div class="main">
+            <div class="slide">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./slide/Academy_Hero_TitleO_New_PC_v1.0_0123[20250124_000345].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/LLS_EncoreWeek_Hero_New_PC_v1.0_0123[20250203_151045].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/Whisen_PC[20250117_172147].png" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/LLS_Subscribe_New_PC[20250120_150028].png" alt=""></div>
+                      <div class="swiper-slide"><img src="/slide/Roboking_New_PC[20250131_161608].png" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/Shinhan_New_PC[20250120_150349].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/LCK_Hero_New_PC_v1.0_0122[20250131_160440].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/Dishwasher_PC_v1.0_0203[20250203_194500].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/Aeroboost_New_PC[20250120_150429].png" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/PC[20250204_183047].jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/OLED_New_PC[20250120_150507].png" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/STEM_New_PC[20250120_150541].jfif" alt=""></div>
+                      <div class="swiper-slide"><img src="./slide/LLS_Bestshop_New_PC[20250117_170108].jfif" alt=""></div>
+                    </div>
+                    <div class="btn-next"></div>
+                    <div class="btn-prev"></div>
+                    <div class="btn-box">
+                        <div class="play"><img src="./slide/play.svg" alt="" id="s-btn"></div>
+                        <div class="pager"></div>
+                        <div class="more"><img src="/img/다운로드.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-video">
+                    <video class="video1" src="./media/number1.mp4" muted>
+                    </video>
+                    <div class="video1-img">
+                        <img src="./img/video1.svg" width="185px" height="65px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="b-title">당신의 빛나는 라이프</div>
+                <div class="b-content">예술과 기술이 조화를 이룬 차원이 다른 올레드, LG 올레드 evo 오브제컬렉션</div>
+                <div class="b-click"><span>제품 보기</span></div>
+            </div>
+            <!-- 2번영상 -->
+            <div class="banner">
+                <div class="banner-video">
+                    <video id="test" class="video1" src="./media/number2.mp4" muted>
+                    </video>
+                    <div class="video1-img">
+                        <img src="./img/video2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="b-title">두개의 대화면을 하나처럼 자유롭게</div>
+                <div class="b-content">더 놀랍고 새로운 그램을 만나다. 2022년 그램</div>
+                <div class="b-click"><span>제품 보기</span></div>
+            </div>
+            <!-- 3번영상 -->
+            <div class="banner">
+                <div class="banner-video">
+                    <video class="video1" src="./media/number3.mp4" muted>
+                    </video>
+                    <div class="video1-img">
+                        <img src="./img/video3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="b-title">깨끗한 공기를 이제 원하는 온도로</div>
+                <div class="b-content">청정은 물론 온풍과 선풍까지<br>세상에 없던 에어로 타워를 만나보세요</div>
+                <div class="b-click"><span>제품 보기</span></div>
+            </div>
+            <!-- 4번영상 -->
+            <div class="banner">
+                <div class="banner-video">
+                    <video class="video1" src="./media/number4.mp4" muted>
+                    </video>
+                    <div class="video1-img">
+                        <img src="./img/video4.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="b-title">세상에 없던 6모션 건조</div>
+                <div class="b-content">당신의 라이프에 맞는 6모션 건조 라인업을 만나보세요</div>
+                <div class="b-click"><span>건조기 보기</span><span>세탁기 보기</span></div>
+            </div>
+            <!-- 5번영상 -->
+            <div class="banner">
+                <div class="banner-video">
+                    <video class="video1" src="./media/number5.mp4" muted>
+                    </video>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="b-title">LG전자 BEST SHOP<br>야간무인매장 <span style="color: #a50034;">전국 확대 오픈</span></div>
+                <div class="b-content">전국 19개 매장에서 20시 30분부터 24시 자정까지 야간무인매장을 운영합니다</div>
+                <div class="b-click"><span>자세히 보기</span></div>
+            </div>
+            <div class="section-container">
+                <div class="section">
+                    <div class="article1">
+                        <div class="arti-title">당신이 원하는 삶을 누려보세요</div>
+                        <div class="arti-img"><a href="#"><img src="./img/thinq_banner_pc.jpg" alt=""></a></div>
+                        <div class="arti-img-text"><a href="#">
+                                <p>ThinQ가 알아서 챙겨주니까</p><span>자세히 보기</span>
+                            </a></div>
+                    </div>
+                    <div class="article2">
+                        <div class="arti-title">CES 2022</div>
+                        <div class="arti-img"><a href=""><img src="./img/storybanner_pc_2022ces_1223.jpg" alt=""></a>
+                        </div>
+                        <div class="arti-img-text"><a href="#">
+                                <p>LG WORLD PREMIERE</p><span>자세히 보기</span>
+                            </a></div>
+                    </div>
+                    <div class="article2">
+                        <div class="arti-title">아직 고민이라면, 이렇게 하세요</div>
+                        <div class="arti-img">
+                            <div class="choice-box">
+                                <div class="box-item"><img src="./img/img_Select_MO_128.svg" alt="">
+                                    <div class="box-text">
+                                        <div class="box-title">고객님께 딱맞는 가전은?</div>
+                                        <div class="box-comment">내게 맞는 제품 추천받기</div>
+                                    </div>
+                                </div>
+                                <div class="box-item"><img src="./img/img_bestshop_MO_128.svg" alt="">
+                                    <div class="box-text">
+                                        <div class="box-title">베스트샵에서 상담 받으세요</div>
+                                        <div class="box-comment">오프라인 매장 상담 예약하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article2">
+                        <div class="arti-title">구매 혜택 추천드려요</div>
+                        <div class="arti-img"><a href=""><img src="./img/img-main-recom-pc.jpg" alt=""></a></div>
+                        <div class="arti-img-text1"><a href="#"><p>LGE.COM 1월 혜택모음</p><span>자세히 보기</span></a></div>
+                    </div>
+                    <div class="article2">
+                        <div class="arti-title">멤버십 혜택 받아가세요</div>
+                        <div class="gif-box">
+                            <div class="gif-item"><img src="./img/icon_03_optimized.gif" alt="">
+                                <div class="gif-text">
+                                    <div class="gif-title">혜택받는 멤버십 가입</div>
+                                    <div class="gif-comment">LG전자 멤버십 회원으로 다양한 구매 및 고객 서비스 관련 혜택 누리기</div>
+                                </div>
+                            </div>
+                            <div class="gif-item"><img src="./img/icon_04_optimized.gif" alt="">
+                                <div class="gif-text">
+                                    <div class="gif-title">멤버십 포인트 적립</div>
+                                    <div class="gif-comment">다양한 이벤트를 통해 포인트 적립 및 사용하기</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-end">
+                    <div class="arti-title">가전 관리 잊지마세요</div>
+                    <div class="choice-box2">
+                        <div class="regi">
+                            <div><img src="./img/icon-forget-01-48x48.svg" alt="">
+                                <div class="box2-title">내 제품 등록</div>
+                                <div class="box2-comment">고객님의 보유 제품을 등록하고, 관리하기</div>
+                            </div>
+                        </div>
+                        <div class="sup">
+                            <div><img src="./img/icon-forget-02-48x48.svg" alt="">
+                                <div class="box2-title">출장 서비스 예약</div>
+                                <div class="box2-comment">전문 엔지니어가 도와주는 서비스 출장예약하기</div>
+                            </div>
+                        </div>
+                        <div class="careship">
+                            <div><img src="./img/icon-forget-03-48x48.svg" alt="">
+                                <div class="box2-title">케어십 안내</div>
+                                <div class="box2-comment">케어솔루션 매니저의 전문적인 케어서비스 받기</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fix">
+                    <div class="chat-btn">
+                        <img src="img/icon_img_floating_40.svg" alt="">
+                        <div class="chat-menu">
+                            <div><a href="">상담 챗<p><img src="./img/icon-chat-40.svg" alt=""></p></a></div>
+                            <div><a href="">매장 상담 예약<p><img src="./img/img_shop_40.svg" alt=""></p></a></div>
+                            <div><a href="">제품 문제 해결<p><img src="/img/icon_floating_solutions.svg" alt=""></p></a></div>
+                            <div><a href="">서비스 센터 찾기<p><img src="./img/icon_find-center.svg" alt=""></p></a></div>
+                        </div>
+                    </div>
+                    <div class="top-btn">
+                        <img src="/img/icon-top-new.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 푸터영역 -->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="all-menu">
+                        <div class="all-button"><span>메뉴 전체보기<img src="./img/btn-arr-16-black-sm.svg" alt=""></span></div>
+                    </div>
+                    <div class="open-menu">
+                        <div class="all-menu-container">
+                            <div class="all-menu-view">
+                                <div class="menu-title">제품</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">TV/AV</div>
+                                        <div class="list-con">
+                                            <div>TV</div>
+                                            <div>프로젝터</div>
+                                            <div>AV</div>
+                                            <div>상업용 디스플레이</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">IT</div>
+                                        <div class="list-con">
+                                            <div>노트북</div>
+                                            <div>일체형/데스크톱</div>
+                                            <div>모니터</div>
+                                            <div>로봇</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">주방가전</div>
+                                        <div class="list-con">
+                                            <div>냉장고</div>
+                                            <div>컨버터블 패키지</div>
+                                            <div>김치냉장고</div>
+                                            <div>전기레인지</div>
+                                            <div>식기세척기</div>
+                                            <div>광파오븐/전자레인지</div>
+                                            <div>정수기</div>
+                                            <div>맥주제조기</div>
+                                            <div>빌트인가전</div>
+                                            <div>시그니처 키친 스위트</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">생활가전</div>
+                                        <div class="list-con">
+                                            <div>워시타워</div>
+                                            <div>세탁기</div>
+                                            <div>의류건조기</div>
+                                            <div>스타일러</div>
+                                            <div>청소기</div>
+                                            <div>안마의자</div>
+                                            <div>식물생활가전</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">에어컨/에어케어</div>
+                                        <div class="list-con">
+                                            <div>에어컨</div>
+                                            <div>시스템에어컨</div>
+                                            <div>공기청정기</div>
+                                            <div>공기청정팬</div>
+                                            <div>제습/가습기</div>
+                                            <div>식물생활가전</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title"></div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">뷰티/의료기기</div>
+                                        <div class="list-con">
+                                            <div>뷰티 디바이스</div>
+                                            <div>의료기기</div>
+                                            <div>케어용품/소모품</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">에너지</div>
+                                        <div class="list-con">
+                                            <div>태양광</div>
+                                            <div>솔루션</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">LG Objet Collection</div>
+                                        <div class="list-con">
+                                            <div>냉장고</div>
+                                            <div>컨버터블 패키지</div>
+                                            <div>김치냉장고</div>
+                                            <div>전기레인지</div>
+                                            <div>식기세척기</div>
+                                            <div>광파오븐/전자레인지</div>
+                                            <div>정수기</div>
+                                            <div>워시타워</div>
+                                            <div>세탁기</div>
+                                            <div>의류건조기</div>
+                                            <div>스타일러</div>
+                                            <div>청소기</div>
+                                            <div>청소기식물생활가전</div>
+                                            <div>에어컨</div>
+                                            <div>공기청정팬</div>
+                                            <div>공기청정기</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">LG SIGNATURE</div>
+                                        <div class="list-con">
+                                            <div>올레드 TV</div>
+                                            <div>냉장고</div>
+                                            <div>세탁기</div>
+                                            <div>에어컨</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">케어용품/소모품</div>
+                                        <div class="list-con">
+                                            <div>청소기</div>
+                                            <div>에어컨</div>
+                                            <div>공기청정기/에어케어</div>
+                                            <div>TV/AV</div>
+                                            <div>모니터PC</div>
+                                            <div>세탁기</div>
+                                            <div>건조기</div>
+                                            <div>스타일러</div>
+                                            <div>냉장고</div>
+                                            <div>뷰티/의료기기</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title">스토리</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">라이프</div>
+                                        <div class="list-con">
+                                            <div>라이프 스타일</div>
+                                            <div>트렌드</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">인사이드</div>
+                                        <div class="list-con">
+                                            <div>대명장의 추천</div>
+                                            <div>Only & Best</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">가이드&팁</div>
+                                        <div class="list-con">
+                                            <div>가전꿀팁</div>
+                                            <div>사용가이드</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">리뷰</div>
+                                        <div class="list-con">
+                                            <div>고객리뷰</div>
+                                            <div>스탠바이미 클럽</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">아카이브</div>
+                                        <div class="list-con">
+                                            <div>TV광고</div>
+                                            <div>수상내역</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title">고객지원</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">제품 사용 지원</div>
+                                        <div class="list-con">
+                                            <div>제품 문제 해결</div>
+                                            <div>동영상가이드</div>
+                                            <div>사용 설명서</div>
+                                            <div>드라이버S/W</div>
+                                            <div>S/W 업데이트 소식</div>
+                                            <div>카드 뉴스</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">서비스 상담</div>
+                                        <div class="list-con">
+                                            <div>챗봇 상담</div>
+                                            <div>이메일 문의</div>
+                                            <div>전화상담 예약</div>
+                                            <div>원격상담 예약</div>
+                                            <div>영상상담 예약</div>
+                                            <div>상담결과 조회/변경</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">서비스 예약</div>
+                                        <div class="list-con">
+                                            <div>출장 서비스 예약</div>
+                                            <div>제품 설리/철거 예약</div>
+                                            <div>예약결과 조회/변경</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">센터매장찾기</div>
+                                        <div class="list-con">
+                                            <div>센터 찾기</div>
+                                            <div>센터 방문 예약</div>
+                                            <div>베스트샷 매장찾기</div>
+                                            <div>매장상담예약</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title"></div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">고객의 소리</div>
+                                        <div class="list-con">
+                                            <div>칭찬합니다</div>
+                                            <div>계산해주세요</div>
+                                            <div>나눔 글 보기</div>
+                                            <div>칭찬 글 보기</div>
+                                            <div>경영진에게 제안</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">서비스 안내</div>
+                                        <div class="list-con">
+                                            <div>서비스 뉴스</div>
+                                            <div>공지사항</div>
+                                            <div>요금/보증 안내</div>
+                                            <div>제생부품 가격 공지</div>
+                                            <div>이용가이드/FAQ</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">제품 카탈로그</div>
+                                        <div class="list-con">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title">렌탈케어</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">렌탈/(케어솔루션)제품</div>
+                                        <div class="list-con">
+                                            <div>정수기</div>
+                                            <div>맥주제조기</div>
+                                            <div>공기청정기</div>
+                                            <div>건조기</div>
+                                            <div>스타일러</div>
+                                            <div>전기레인지</div>
+                                            <div>식기세척기</div>
+                                            <div>식품생활가전</div>
+                                            <div>안마의자</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">렌탈/케어소개</div>
+                                        <div class="list-con">
+                                            <div>WHY 케어솔루션</div>
+                                            <div>WHY 케어십</div>
+                                            <div>고객혜택</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="menu-title">이벤트/멤버십</div>
+                                        <div class="list-t">멤버십</div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">이벤트</div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">기획전</div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">엘라쇼</div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">카드혜택</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title">마이컬렉션</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">가장많이 본 제품</div>
+                                        <div class="list-t">가장많이 판매된 제품</div>
+                                        <div class="list-t">남의 제품 컬렉션</div>
+                                    </div>
+                                        <div class="menu-title">마이페이지</div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">쇼핑 관리</div>
+                                        <div class="list-con">
+                                            <div>주문/배송 조회</div>
+                                            <div>배송지 주소 조회</div>
+                                            <div>쿠폰</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">랜탈/케어</div>
+                                        <div class="list-con">
+                                            <div>계약 현황</div>
+                                            <div>납부 내역</div>
+                                            <div>방문일정/예약</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">관심목록</div>
+                                        <div class="list-con">
+                                            <div>찜한 제품</div>
+                                            <div>최근 본 제품</div>
+                                            <div>구독</div>
+                                            <div>단골 매장</div>
+                                            <div>재입고 알림</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">보유 제품등록</div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">고객 지원 관리</div>
+                                        <div class="list-con">
+                                            <div>나의 글 보기</div>
+                                            <div>문의/예약 결과 조회</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">멤버십 관리</div>
+                                        <div class="list-con">
+                                            <div>멤버십 가입 정보</div>
+                                            <div>멤버십 포인트 조회</div>
+                                            <div>영수증등록</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">활동 관리</div>
+                                        <div class="list-con">
+                                            <div>리뷰 관리</div>
+                                            <div>참여이벤트</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">회원 정보</div>
+                                        <div class="list-con">
+                                            <div>개인정보 수정</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-menu-view">
+                                <div class="menu-title">회사소개</div>
+                                <div class="f-menu-items">
+                                    <div class="f-menu-list">
+                                        <div class="list-t">기업정보</div>
+                                        <div class="list-con">
+                                            <div>기업소개</div>
+                                            <div>LG WAY</div>
+                                            <div>역사</div>
+                                            <div>경영진 이사회</div>
+                                            <div>브랜드</div>
+                                            <div>사업장</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">인재채용</div>
+                                        <div class="list-con">
+                                            <div>인재상</div>
+                                            <div>인사제도</div>
+                                            <div>인재육성</div>
+                                            <div>채용공고</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">투자자정보</div>
+                                        <div class="list-con">
+                                            <div>경영정보</div>
+                                            <div>재무정보</div>
+                                            <div>주식정보</div>
+                                            <div>IR행사</div>
+                                            <div>공시/전자공고</div>
+                                            <div>Contact IR</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">준법경영</div>
+                                        <div class="list-con">
+                                            <div>개요</div>
+                                            <div>LG전자 행동강령</div>
+                                            <div>Compliance Program</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">ESG 경영</div>
+                                        <div class="list-con">
+                                            <div>ESG 경영 개요</div>
+                                            <div>환경</div>
+                                            <div>사회</div>
+                                            <div>지배구조</div>
+                                            <div>ESG 팩트북</div>
+                                            <div>성과 및 데이터</div>
+                                            <div>지속가능경영 보고서</div>
+                                        </div>
+                                    </div>
+                                    <div class="f-menu-list">
+                                        <div class="list-t">뉴스</div>
+                                        <div class="list-t">열린구매</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="language">한국/한국어 <img src="./img/btn-arr-16-black-sm.svg" alt=""></div>
+                    <ul class="sns-links">
+                        <li><img src="./img/icon-sns1.svg" alt="">유튜브</li>
+                        <li><img src="./img/insta.svg" alt="">인스타그램</li>
+                        <li><img src="./img/icon-sns3 (1).svg" alt="">페이스북</li>
+                        <li><img src="./img/icon-sns5 (1).svg" alt="">고객서비스<br>블로그</li>
+                        <li><img src="./img/icon-sns1.svg" alt="">고객서비스<br>유튜브</li>
+                        <li><img src="./img/icon-sns4.svg" alt="">Live LG</li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="infolist">
+                        <div class="list-items"><a href="">사이트맵</a></div>
+                        <div class="list-items-b"><a href="">개인정보처리방침</a></div>
+                        <div class="list-items-b"><a href="">이벤트 개인정보 처리방침</a></div>
+                        <div class="list-items-b"><a href="">영상정보처리기기운영관리방침</a></div>
+                        <div class="list-items"><a href="">이용약관</a></div>
+                        <div class="list-items"><a href="">이메일 무단수집 거부</a></div>
+                        <div class="list-items"><a href="">정도 경영 사이버 신문고</a></div>
+                    </div>
+                    <div class="infolist">
+                        <div class="list-items">
+                            <span>대표번호 : </span>
+                            <span id="call">02-3777-1114 </span>
+                            <span>제품/서비스 문의 : </span>
+                            <span id="call">1544-7777 </span>
+                            <span>온라인몰 구매 문의(가전/소모품/케어솔루션 신규) : </span>
+                            <span id="call">1544-6351 </span>
+                            <span>/(케어솔루션 기존) : </span>
+                            <span id="call">1577-4090</span>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="list-items">
+                            <span>운영시간 : </span>
+                            <span id="call">평일 09:00 ~ 18:00 </span>
+                            <span>(주말,공휴일 휴무)| 통화요금 : </span>
+                            <span id="call">발신자 부담</span>
+                        </div>
+                    </div>
+                    <div class="infolist-end">
+                        <div class="end-top">
+                            <div>대표이사 : 조주현,백두용</div>
+                            <div>사업자등록번호 : 107-86-14075</div>
+                            <div><span><a href="">사업자 정보확인</a></span></div>
+                            <div>통신판매업신고번호 : 제199997-00084호</div>
+                            <div>주소 : 서울시 영등포구 여의대로 128 LG트윈타워</div>
+                        </div>
+                        <div class="end-bottom">
+                            <div class="copyri">
+                                <div>본 사이트의 모든 콘텐츠는 저작권법의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</div>
+                                <div>Copyright © 2022 LG Electronics. All Rights Reserved.</div>
+                            </div>
+                            <div class="end-bottom-img">
+                                <img src="./img/img-ismsp.png"alt="">
+                                <div class="end-bottom-text">
+                                    <div><span id="call">인증범위</span> 대외,B2C,B2B 서비스 운영</div>
+                                    <div><span id="call">유효기간</span> 2020.01.29~~2023.01.28</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./lg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay:{
+        delay:3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      pagination: {
+        el: ".pager",
+        type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span>' + ' <span>/</span> ' + '<span class="' + totalClass + '"></span>';
+    }
+  },
+      navigation: {
+        nextEl: ".btn-next",
+        prevEl: ".btn-prev",
+      },
+    });
+    $('.play').on('click', function() {
+        if(swiper.autoplay.running){
+            swiper.autoplay.stop();
+            $('#s-btn').attr('src','./slide/pause.svg');
+            console.log("슬라이드 정지");
+        } else{
+            swiper.autoplay.start();
+            $('#s-btn').attr('src','./slide/play.svg');
+            console.log("슬라이드 재생")
+        }
+    });
+    </script>
+</body>
+</html>
